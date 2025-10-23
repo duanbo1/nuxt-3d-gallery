@@ -4,7 +4,7 @@ status: backlog
 created: 2025-10-23T05:27:40Z
 progress: 0%
 prd: .claude/prds/3d-model-gallery.md
-github: [Will be updated when synced to GitHub]
+github: https://github.com/duanbo1/nuxt-3d-gallery/issues/1
 ---
 
 # Epic: 3D Model Gallery Platform
@@ -280,26 +280,20 @@ High-level task categories (targeting ≤10 tasks):
 - **Low Complexity**: UI components, basic routing, downloads
 
 ## Tasks Created
-
-- [ ] 001.md - Project Setup & Infrastructure (parallel: false, depends: [])
-- [ ] 002.md - Data Schema & Validation Layer (parallel: false, depends: [001])
-- [ ] 003.md - Core Composables & Data Access (parallel: true, depends: [002])
-- [ ] 004.md - Nitro API Routes (parallel: true, depends: [002])
-- [ ] 005.md - Gallery UI Components (parallel: true, depends: [002, 003], conflicts: [006])
-- [ ] 006.md - 3D Model Preview System (parallel: true, depends: [002, 003], conflicts: [005])
-- [ ] 007.md - Download System (parallel: true, depends: [004, 006])
-- [ ] 008.md - Search & Filter Implementation (parallel: true, depends: [003, 005])
-- [ ] 009.md - SEO & SSG Configuration (parallel: true, depends: [006])
-- [ ] 010.md - Comment System Integration (parallel: true, depends: [006])
-- [ ] 011.md - Performance Optimization (parallel: false, depends: [005, 006, 008])
-- [ ] 012.md - Testing & Launch Preparation (parallel: false, depends: [011])
+- [ ] #10 - SEO & SSG Configuration (parallel: true, depends: [7])
+- [ ] #11 - Comment System Integration (parallel: true, depends: [7])
+- [ ] #12 - Performance Optimization (parallel: false, depends: [6, 7, 9])
+- [ ] #13 - Testing & Launch Preparation (parallel: false, depends: [12])
+- [ ] #2 - Project Setup & Infrastructure (parallel: false, depends: [])
+- [ ] #3 - Data Schema & Validation Layer (parallel: false, depends: [2])
+- [ ] #4 - Core Composables & Data Access (parallel: true, depends: [3])
+- [ ] #5 - Nitro API Routes (parallel: true, depends: [3])
+- [ ] #6 - Gallery UI Components (parallel: true, depends: [3, 4])
+- [ ] #7 - 3D Model Preview System (parallel: true, depends: [3, 4])
+- [ ] #8 - Download System (parallel: true, depends: [5, 7])
+- [ ] #9 - Search & Filter Implementation (parallel: true, depends: [4, 6])
 
 **Total tasks**: 12
-**Parallel tasks**: 8 (tasks 003-010)
-**Sequential tasks**: 4 (001, 002, 011, 012)
+**Parallel tasks**: 8 (tasks 4-11)
+**Sequential tasks**: 4 (2, 3, 12, 13)
 **Estimated total effort**: 116 hours (~14.5 days)
-
----
-
-**Epic Status**: Tasks decomposed and ready for execution
-**Next Action**: Run `/pm:epic-sync 3d-model-gallery` to sync with GitHub issues (optional)
